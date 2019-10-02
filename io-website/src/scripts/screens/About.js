@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class About extends Component {
 	render() {
 		return (
-			<main>
+			<main id="about">
 				<p>About</p>
 			</main>
 		)

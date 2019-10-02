@@ -1,13 +1,21 @@
 .b-menu {
-	display: flex;
-	flex-flow: row wrap;
+	@include make-col-ready();
+	@include make-col(12);
 
-	ul,
-	li {
-		list-style-type: none;
-	}
+	display: flex;
+	flex-flow: row nowrap;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 
 	&__item {
-		
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+
+		a {
+			padding: $grid-gutter-width / 2;
+		}
 	}
 }
