@@ -1,0 +1,13 @@
+.b-menu {
+	display: flex;
+	flex-flow: row wrap;
+
+	ul,
+	li {
+		list-style-type: none;
+	}
+
+	&__item {
+		
+	}
+}
