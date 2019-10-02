@@ -9,8 +9,17 @@ $font-size-base   : 1rem; // Set on body
 
 // Default colors
 $white            : #fff;
+$light            : #ececec;
 $dark             : #121212;
 $black            : #000;
+
+// Monokai
+$m-red            : #ff6188;
+$m-orange         : #fc9867;
+$m-yellow         : #ffd866;
+$m-green          : #a9dc76;
+$m-blue           : #78dce8;
+$m-purple         : #ab9df2;
 
 // Gutters and padding
 $grid-gutter-width: $font-size-base * 1.125;
@@ -37,4 +46,5 @@ $header-min-height: 5rem;
 
 
 // Transitions
-$trans-fast: .1s;
+$trans-fast: .25s;
+$trans-mid: .5s;

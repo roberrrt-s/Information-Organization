@@ -1,0 +1,12 @@
+.c-vector {
+	display: block;
+	position: relative;
+	width: 100%;
+	vertical-align: middle;
+
+	svg {
+		width: 100% !important;
+		height: auto !important;
+		display: block;
+	}
+}

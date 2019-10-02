@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 
+import { ReactComponent as Image } from './../../assets/images/ontology.svg';
+
 class Ontology extends Component {
 	render() {
 		return (
 			<main id="ontology">
-				<p>Ontology</p>
+				<div className="c-vector">
+					<Image />
+				</div>
 			</main>
 		)
 	}

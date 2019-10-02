@@ -7,22 +7,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/App.js",
-			"settings":
-			{
-				"buffer_size": 345,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -38,6 +22,10 @@
 			[
 				"install",
 				"Package Control: Install Package"
+			],
+			[
+				"remove pack",
+				"Package Control: Remove Package"
 			],
 			[
 				"monokai",
@@ -58,10 +46,6 @@
 			[
 				"select the",
 				"Monokai Pro: select theme"
-			],
-			[
-				"remove pack",
-				"Package Control: Remove Package"
 			],
 			[
 				"install ",
@@ -120,10 +104,57 @@
 	"expanded_folders":
 	[
 		"/Users/Robert/Sites/Information-Organization",
-		"/Users/Robert/Sites/Information-Organization/io-website"
+		"/Users/Robert/Sites/Information-Organization/io-website",
+		"/Users/Robert/Sites/Information-Organization/io-website/build",
+		"/Users/Robert/Sites/Information-Organization/io-website/public",
+		"/Users/Robert/Sites/Information-Organization/io-website/src",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/data",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/scripts",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/scripts/partials",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/scripts/screens",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/styles",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/styles/blocks",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/styles/common",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/styles/layouts"
 	],
 	"file_history":
 	[
+		"/Users/Robert/Sites/Information-Organization/io-website/src/styles/components/_c-vector.scss",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/scripts/screens/About.js",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/data/data-1.json",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/styles/blocks/_b-menu.scss",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/styles/layouts/_l-app.scss",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/styles/common/_variables.scss",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/styles/layouts/_l-header.scss",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/styles/common/_global.scss",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/styles/layouts/_l-main.scss",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/scripts/screens/Data.js",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/scripts/screens/Ontology.js",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/scripts/screens/Home.js",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/styles/main.scss",
+		"/Users/Robert/Sites/Information-Organization/io-website/public/index.html",
+		"/Users/Robert/Sites/Information-Organization/io-website/public/manifest.json",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/scripts/partials/Main.js",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/styles/common/_mixins.scss",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/scripts/partials/Menu.js",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/index.js",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/scripts/App.js",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/styles/common/variables.scss",
+		"/Users/Robert/Sites/Information-Organization/io-website/package.json",
+		"/Users/Robert/Sites/Information-Organization/io-website/config/modules.js",
+		"/Users/Robert/Sites/Information-Organization/io-website/build/manifest.json",
+		"/Users/Robert/Sites/Information-Organization/io-website/jsconfig.json",
+		"/Users/Robert/Sites/Information-Organization/io-website/config/webpack.config.js",
+		"/Users/Robert/Sites/Information-Organization/io-website/scripts/start.js",
+		"/Users/Robert/Sites/Information-Organization/io-website/scripts/build.js",
+		"/Users/Robert/Sites/Information-Organization/io-website/config/webpack.config.dev.js",
+		"/Users/Robert/Sites/Information-Organization/io-website/config/webpack.config.prod.js",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/App.css",
+		"/Users/Robert/Sites/Information-Organization/io-website/.stylelintrc",
+		"/Users/Robert/Sites/Information-Organization/io-website/.eslintrc",
+		"/Users/Robert/Sites/Information-Organization/io-website/.stylelintignore",
+		"/Users/Robert/Sites/Information-Organization/io-website/io-website.sublime-project",
+		"/Users/Robert/Sites/Information-Organization/io-website/io-website.sublime-workspace",
 		"/Users/Robert/Sites/Information-Organization/io-website/src/.eslintrc",
 		"/Users/Robert/Sites/Information-Organization/io-website/src/BarChart.js",
 		"/Users/Robert/Sites/Information-Organization/README.md",
@@ -159,13 +190,14 @@
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 52.0
 	},
 	"find_in_files":
 	{
 		"height": 132.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -173,6 +205,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"renderRow",
+			"data",
+			"var ",
+			"],",
+			"class=\"",
+			"<li>",
+			"baseUrl",
+			"options.baseUrl",
+			"getAdditionalModulePaths",
+			"baseUrl",
+			"env",
+			"babel",
+			"polyfill",
 			"id"
 		],
 		"highlight": true,
@@ -191,97 +236,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/App.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 345,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								298,
-								298
-							]
-						],
-						"settings":
-						{
-							"color_helper.box_height": 15,
-							"color_helper.color_scheme": "Monokai Pro (Filter Machine).sublime-color-scheme",
-							"color_helper.file_palette":
-							[
-							],
-							"color_helper.preview_meta":
-							{
-							},
-							"color_helper.scan":
-							{
-								"current_ext": ".js",
-								"current_syntax": "Simple JSX/JSX",
-								"enabled": false,
-								"last_updated": 1570002941.88
-							},
-							"syntax": "Packages/Simple JSX/JSX.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"color_helper.box_height": 15,
-							"color_helper.color_scheme": "Monokai Pro (Filter Machine).sublime-color-scheme",
-							"color_helper.file_palette":
-							[
-							],
-							"color_helper.preview_meta":
-							{
-							},
-							"color_helper.scan":
-							{
-								"current_ext": null,
-								"current_syntax": "Text/Plain text",
-								"enabled": false,
-								"last_updated": 1570002941.88
-							},
-							"default_dir": "/Users/Robert/Sites/Information-Organization/io-website",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],

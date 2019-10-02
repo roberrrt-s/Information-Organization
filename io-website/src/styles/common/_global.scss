@@ -24,3 +24,31 @@ h2 {
 	font-size: $h2-font-size;
 	font-weight: $h2-font-weight;
 }
+
+a {
+	color: $m-blue;
+	transition: all $trans-fast ease;
+
+	@include hover-focus {
+		color: darken($m-blue, 25%);
+		text-decoration: none;
+	}
+}
+
+table {
+	overflow: scroll;
+	display: flex;
+	flex-flow: column nowrap;
+
+	tr {
+		display: flex;
+		flex-flow: row nowrap;
+		border-bottom: 1px solid $light;
+	}
+
+	tr, td {
+		display: flex;
+		overflow: hidden;
+		height: 3rem;
+	}
+}
