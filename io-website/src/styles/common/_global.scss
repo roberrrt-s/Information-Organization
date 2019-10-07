@@ -34,21 +34,3 @@ a {
 		text-decoration: none;
 	}
 }
-
-table {
-	overflow: scroll;
-	display: flex;
-	flex-flow: column nowrap;
-
-	tr {
-		display: flex;
-		flex-flow: row nowrap;
-		border-bottom: 1px solid $light;
-	}
-
-	tr, td {
-		display: flex;
-		overflow: hidden;
-		height: 3rem;
-	}
-}
