@@ -110,15 +110,20 @@
 		"/Users/Robert/Sites/Information-Organization/io-website/src",
 		"/Users/Robert/Sites/Information-Organization/io-website/src/data",
 		"/Users/Robert/Sites/Information-Organization/io-website/src/scripts",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/scripts/blocks",
 		"/Users/Robert/Sites/Information-Organization/io-website/src/scripts/partials",
 		"/Users/Robert/Sites/Information-Organization/io-website/src/scripts/screens",
 		"/Users/Robert/Sites/Information-Organization/io-website/src/styles",
 		"/Users/Robert/Sites/Information-Organization/io-website/src/styles/blocks",
 		"/Users/Robert/Sites/Information-Organization/io-website/src/styles/common",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/styles/components",
 		"/Users/Robert/Sites/Information-Organization/io-website/src/styles/layouts"
 	],
 	"file_history":
 	[
+		"/Users/Robert/Sites/Information-Organization/io-website/src/scripts/screens/Data.js",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/styles/common/_global.scss",
+		"/Users/Robert/Sites/Information-Organization/io-website/src/scripts/blocks/Table.js",
 		"/Users/Robert/Sites/Information-Organization/io-website/src/styles/components/_c-vector.scss",
 		"/Users/Robert/Sites/Information-Organization/io-website/src/scripts/screens/About.js",
 		"/Users/Robert/Sites/Information-Organization/io-website/src/data/data-1.json",
@@ -126,9 +131,7 @@
 		"/Users/Robert/Sites/Information-Organization/io-website/src/styles/layouts/_l-app.scss",
 		"/Users/Robert/Sites/Information-Organization/io-website/src/styles/common/_variables.scss",
 		"/Users/Robert/Sites/Information-Organization/io-website/src/styles/layouts/_l-header.scss",
-		"/Users/Robert/Sites/Information-Organization/io-website/src/styles/common/_global.scss",
 		"/Users/Robert/Sites/Information-Organization/io-website/src/styles/layouts/_l-main.scss",
-		"/Users/Robert/Sites/Information-Organization/io-website/src/scripts/screens/Data.js",
 		"/Users/Robert/Sites/Information-Organization/io-website/src/scripts/screens/Ontology.js",
 		"/Users/Robert/Sites/Information-Organization/io-website/src/scripts/screens/Home.js",
 		"/Users/Robert/Sites/Information-Organization/io-website/src/styles/main.scss",
@@ -190,7 +193,7 @@
 	],
 	"find":
 	{
-		"height": 52.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{

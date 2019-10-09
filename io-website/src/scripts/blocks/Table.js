@@ -1,32 +1,38 @@
 import React, { Component } from 'react';
 import DataTable from 'react-data-table-component';
-import dogs from 'data/data-1.json';
+import set from 'data/dataset.json';
 
+const flatten = function(arr, result = []) {
+  for (let i = 0, length = arr.length; i < length; i++) {
+    const value = arr[i];
+    if (Array.isArray(value)) {
+      flatten(value, result);
+    } else {
+      result.push(value);
+    }
+  }
+  return result;
+};
 
-// adult: false
-// backdrop_path: "/iJlGxN0p1suzloBGvvBu3QSSlhT.jpg"
-// genre_ids: (2) [28, 53]
-// genre_names: (2) ["Action", "Thriller"]
-// id: 245891
-// original_language: "en"
-// original_title: "John Wick"
-// overview: "Ex-hitman John Wick comes out of retirement to track down the gangsters that took everything from him."
-// popularity: 60.104
-// poster_path: "/5vHssUeVe25bMrof1HyaPyWgaP.jpg"
-// release_date: "2014-10-24"
-// title: "John Wick"
-// video: false
-// vote_average: 7.2
-// vote_count: 10851
+const data = flatten(set);
 
+console.log(data.length);
 
-const data = [].concat(...dogs);
+console.log('test');
 
 const columns = [
   {
     name: 'Title',
     selector: 'title',
     sortable: true,
+  },
+  {
+    name: 'Animal',
+    selector: 'animal',
+  },
+  {
+    name: 'Tagline',
+    selector: 'tagline',
   },
   {
     name: 'Description',
