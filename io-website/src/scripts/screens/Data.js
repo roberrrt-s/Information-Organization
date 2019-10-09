@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Table from "scripts/blocks/Table"
+import TableElement from "scripts/blocks/TableElement"
 
 class Data extends Component {
 
@@ -10,7 +10,7 @@ class Data extends Component {
 	render() {
 		return (
 			<main id="data">
-				<Table />
+				<TableElement />
 			</main>
 		)
 	}
