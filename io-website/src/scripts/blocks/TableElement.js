@@ -58,10 +58,10 @@ class TableElement extends Component {
 				show: true,
 				Cell: content => {
 					let data = []
-					content.original.genre_names && content.original.genre_names.map((el, i) => {
+					content.value && content.value.map((el, i) => {
 						data.push(<span key={i}>{el}</span>)
 					});
-					return data;
+					return data.length && data || 'No genre';
 				},
 				filterMethod: (filter, row) => {
 					return row.genre_names && row.genre_names.toString().toLowerCase().indexOf(filter.value.toLowerCase()) >=0;
@@ -71,6 +71,9 @@ class TableElement extends Component {
 				Header: 'Release date',
 				accessor: 'release_date',
 				show: true,
+				Cell: content => {
+					return content.value && content.value || 'No release date';
+				}
 			},
 			{
 				Header: 'Main animal',
