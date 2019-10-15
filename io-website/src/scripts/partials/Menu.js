@@ -9,13 +9,7 @@ class Menu extends Component {
 					<NavLink exact to="/">Home</NavLink>
 				</li>
 				<li className="b-menu__item">
-					<NavLink exact to="/ontology">Ontology</NavLink>
-				</li>
-				<li className="b-menu__item">
 					<NavLink exact to="/data">Data</NavLink>
-				</li>
-				<li className="b-menu__item">
-					<NavLink exact to="/about">About</NavLink>
 				</li>
 			</ul>
 		)
