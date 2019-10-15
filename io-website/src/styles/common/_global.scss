@@ -60,6 +60,13 @@ a {
 	display: flex;
 }
 
+.rt-td span:not(:last-child) {
+	&:after {
+		content: ",";
+		padding-right: .33rem;
+	}
+}
+
 label {
 	display: flex;
 	align-items: center;

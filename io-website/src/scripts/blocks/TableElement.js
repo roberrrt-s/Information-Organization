@@ -50,13 +50,13 @@ class TableElement extends Component {
 				show: true,
 				Cell: content => {
 					let data = []
-					content.original.genre_names.map((el, i) => {
-						data.push(<span key={i}>{el}, </span>)
+					content.original.genre_names && content.original.genre_names.map((el, i) => {
+						data.push(<span key={i}>{el}</span>)
 					});
 					return data;
 				},
 				filterMethod: (filter, row) => {
-					return row.genre_names.toString().toLowerCase().indexOf(filter.value.toLowerCase()) >=0;
+					return row.genre_names && row.genre_names.toString().toLowerCase().indexOf(filter.value.toLowerCase()) >=0;
 				}
 			},
 			{
@@ -68,15 +68,22 @@ class TableElement extends Component {
 				Header: 'Main animal',
 				accessor: 'animal',
 				show: true,
+				Cell: content => {
+					let data = []
+					content.original.animal && content.original.animal.map((el, i) => {
+						data.push(<span key={i}>{el}</span>)
+					});
+					return data;
+				},
 				filterMethod: (filter, row) => {
 					if (filter.value === "all") {
 						return true;
 					}
-					if (filter.value === "dog") {
-						return row[filter.id] === "dog";
+					if (filter.value.indexOf("dog") !== -1) {
+						return row[filter.id] && row[filter.id].indexOf("dog") !== -1;
 					}
-					if (filter.value === "cat") {
-						return row[filter.id] === "cat";
+					if (filter.value.indexOf("cat") !== -1) {
+						return row[filter.id] && row[filter.id].indexOf("cat") !== -1;
 					}
 				},
 				Filter: ({ filter, onChange }) =>
