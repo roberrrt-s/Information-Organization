@@ -35,6 +35,27 @@ a {
 	}
 }
 
+.subrow {
+	padding: 1rem;
+}
+
+.b-buttons {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+label {
+	display: flex;
+	align-items: center;
+	margin-right: 1rem;
+	cursor: pointer;
+	float: left;
+
+	input {
+		margin-right: .3rem;
+	}
+}
+
 .LazyLoad {
 	text-align: center;
 

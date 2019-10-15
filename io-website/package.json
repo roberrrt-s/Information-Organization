@@ -1,6 +1,7 @@
 {
   "name": "io-website",
   "version": "0.1.0",
+  "homepage": "/uva/io/",
   "private": true,
   "dependencies": {
     "@babel/core": "7.6.0",
