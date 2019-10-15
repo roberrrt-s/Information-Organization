@@ -56,6 +56,10 @@ a {
     background: $white;
 }
 
+.ReactTable .rt-thead .rt-th {
+	display: flex;
+}
+
 label {
 	display: flex;
 	align-items: center;

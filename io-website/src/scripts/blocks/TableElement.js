@@ -6,7 +6,6 @@ import ReactTable from "react-table";
 import "react-table/react-table.css";
 
 class TableElement extends Component {
-
 	constructor() {
 		super()
 
@@ -43,6 +42,7 @@ class TableElement extends Component {
 				accessor: 'vote_average',
 				show: true,
 				width: 75,
+				filterable: false,
 			},
 			{
 				Header: 'Genres',
@@ -68,12 +68,44 @@ class TableElement extends Component {
 				Header: 'Main animal',
 				accessor: 'animal',
 				show: true,
+				filterMethod: (filter, row) => {
+					if (filter.value === "all") {
+						return true;
+					}
+					if (filter.value === "dog") {
+						return row[filter.id] === "dog";
+					}
+					if (filter.value === "cat") {
+						return row[filter.id] === "cat";
+					}
+				},
+				Filter: ({ filter, onChange }) =>
+					<select
+						onChange={event => onChange(event.target.value)}
+						style={{ width: "100%" }}
+						value={filter ? filter.value : "all"}
+					>
+						<option value="all">Show All</option>
+						<option value="dog">Dogs</option>
+						<option value="cat">Cats</option>
+					</select>
 			}]
 		}
 	}
 
+	addFilterPlaceholder() {
+		const filters = document.querySelectorAll("div.rt-th > input");
+		for (let filter of filters) {
+			console.log(filter);
+			filter.placeholder = "Filter..";
+		}
+	}
+
+	componentDidMount() {
+		this.addFilterPlaceholder();
+	}
+
 	toggleColumn(n) {
-		console.log('clicked');
 		const cols = this.state.columns.map((col, i) => n===i? {...col, show: !col.show}: col)
 		this.setState({
 			columns: cols
