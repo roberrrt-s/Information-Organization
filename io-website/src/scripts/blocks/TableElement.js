@@ -21,7 +21,11 @@ class TableElement extends Component {
 				width: 150,
 				filterable: false,
 				Cell: content => {
-					return <LazyLoad key={content.value}><img src={`${this.imgPrefix}${content.value}`}/></LazyLoad>
+					if(content.value) {
+						return <LazyLoad key={content.value}><img src={`${this.imgPrefix}${content.value}`}/></LazyLoad>
+					} else {
+						return <LazyLoad key={content.value}><img src={"https://via.placeholder.com/100"}/></LazyLoad>
+					}
 				}
 			},
 			{
@@ -29,9 +33,13 @@ class TableElement extends Component {
 				accessor: 'title',
 				show: true,
 				Cell: content => {
-					return (
-						<a href={`${this.imdbPrefix}${content.original.imdb_id}`}>{content.row.title}</a>
-					)
+					if(content.row.title) {
+						return (
+							<a href={`${this.imdbPrefix}${content.original.imdb_id}`}>{content.row.title}</a>
+						)
+					} else {
+						return 'no title';
+					}
 				},
 				filterMethod: (filter, row) => {
 					return row.title && row.title.toLowerCase().indexOf(filter.value.toLowerCase()) >=0;
@@ -103,7 +111,6 @@ class TableElement extends Component {
 	addFilterPlaceholder() {
 		const filters = document.querySelectorAll("div.rt-th > input");
 		for (let filter of filters) {
-			console.log(filter);
 			filter.placeholder = "Filter..";
 		}
 	}
@@ -149,7 +156,7 @@ class TableElement extends Component {
 					filterable={true}
 					columns={this.state.columns}
 					SubComponent={subComponent}
-					defaultSorted={[{
+					defaultSorting={[{
 						id: "release_date",
 						desc: true
 					}]}
